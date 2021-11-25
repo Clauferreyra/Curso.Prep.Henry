@@ -16,7 +16,7 @@ function mayoriaDeEdad(edad) {
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
   if (edad>=18)
-  return "Allowed";
+    return "Allowed";
   else return "Not allowed";
 }
   
@@ -78,7 +78,7 @@ function estaEnRango(numero) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (numero<50 && numero>20)
-  return true;
+    return true;
   else return false;
 }
 
@@ -92,7 +92,7 @@ function esEntero(numero) {
   // Tu código:
   if (numero===Math.floor(numero) || numero===Math.ceil(numero))
     return true;
-    else return false;
+  else return false;
 
 }
 
@@ -102,11 +102,11 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
   if (numero%3===0 && numero%5===0)
-  return "fizzbuzz";
+    return "fizzbuzz";
   else if (numero%3===0)
-  return "fizz";
+    return "fizz";
   else if (numero%5===0)
-  return "buzz";
+    return "buzz";
   else return numero;
 }
 
@@ -118,13 +118,13 @@ function operadoresLogicos(num1, num2, num3) {
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
   if (num1<0 || num2<0 || num3<0)
-  return "Hay negativos";
+    return "Hay negativos";
   if (num1>num2 && num1>num3 && num1>0)
-  return "Número 1 es mayor y positivo";
+    return "Número 1 es mayor y positivo";
   if (num1===0 || num2===0 || num3===0)
-  return "Error";
+    return "Error";
   if (num3>num1 && num3>num2)
-  return num3+1;
+    return num3+1;
   else return false;
 }
 
@@ -138,7 +138,9 @@ function esPrimo(numero) {
     return false;
   for (var i = 2; i<numero; i++){
     if (numero%i===0){
-      return false;}}
+      return false;
+    }
+  }
   return true;
     
   
@@ -160,7 +162,8 @@ function tablaDelSeis(){
   //Escribe tu código aquí   
   var arr = [];
   for (var i = 0; i<11; i++){
-    arr[i] = 6*i;}
+    arr[i] = 6*i;
+  }
   return arr;
   
 }
